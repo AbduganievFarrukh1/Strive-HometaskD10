@@ -69,4 +69,34 @@ const getMinAndMaxValues = function(){
     console.log("Min value: " + minValue)
 }
 let output7 = getMinAndMaxValues()
-console.log(output7)
+
+
+//         28) Create an array of arrays, in which every array has 10 random numbers////
+console.log("\nTask28\n");
+let arr10 = [];
+for(let i = 0; i < 10; i++){
+     let current = [];
+     for(let j = 0; j < 10; j++)
+          current.push(Math.floor(Math.random() * 10));
+     arr10.push(current);
+}
+console.log(arr10)
+
+
+//         29) Create a function that gets 2 arrays as parameters and returns the longest one////
+console.log("\nTask29\n");
+const getLongestArray = function(arrayA, arrayB){
+    if(arrayA.length > arrayB.length){
+        console.log("First array is longest one")
+    }
+    else if(arrayA.length < arrayB.length){
+        console.log("Second array is longest one")
+    }
+    else if(arrayA.length = arrayB.length){
+        console.log("Length of array is equal")
+    }
+    else{
+        console.log("You entered wrong data type!")
+    }
+}
+let output9 = getLongestArray([1,2,3,4,5],[2,4,6,2,9,6,4,2])

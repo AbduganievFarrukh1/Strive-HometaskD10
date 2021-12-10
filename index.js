@@ -100,3 +100,32 @@ const getLongestArray = function(arrayA, arrayB){
     }
 }
 let output9 = getLongestArray([1,2,3,4,5],[2,4,6,2,9,6,4,2])
+
+
+
+//         30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values
+console.log("\nTask30\n");
+const returnHigherSumOfArrays = function(arrayA, arrayB){
+    let sum1 = 0
+    for(let i = 0; i<arrayA.length; i++){
+        sum1 += arrayA[i]
+    }
+    let sum2 = 0
+    for(let i = 0; i<arrayB.length; i++){
+        sum2 += arrayB[i]
+    }
+
+    if(sum1 > sum2){
+        console.log("Sum of first array is higher than sum of second array")
+
+    }
+    else if(sum2 > sum1){
+        console.log("Sum of second array is higher than sum of first array")
+
+    }
+    else{
+        console.log("Arrays has wrong data type elements. Please enter only numbers")
+    }
+}
+let output10 = returnHigherSumOfArrays([1,4,5,6], [7,6,3,3,9])
+console.log("\n");

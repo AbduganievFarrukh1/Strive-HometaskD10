@@ -51,3 +51,10 @@ console.log(arr);
 
 //         26) Create an array with 100 random numbers in it/////
 console.log("\nTask 26\n");
+function randomArray(length, max) {
+    return Array.apply(null, Array(length)).map(function() {
+        return Math.round(Math.random() * max);
+    });
+}
+let output6 = randomArray(100,150)
+console.log(output6)

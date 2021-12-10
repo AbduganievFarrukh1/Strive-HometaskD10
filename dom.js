@@ -16,17 +16,49 @@
 
 
 //     31) Get the element with an id of "container" from the page
+
 const getDivElementsFromHTML = document.querySelectorAll("div")
 
+
+
+
+
 //-----        32) Get every <td> element from the page
+
 const GetEveryTDElementFromPage = document.querySelectorAll("td")
+
+
+
+
 
 ////        33) Use a loop for printing the text inside of every <td> element in the page
 
-
+function generate_table() {
+    var body = document.getElementsByTagName("body")[0]; 
+    var tbl = document.createElement("table");
+    var tblBody = document.createElement("tbody");
+  
+    // creating all cells
+    for (var i = 0; i < 2; i++) {
+      // creates a table row
+      var row = document.createElement("tr");
+  
+      for (var j = 0; j < 2; j++) {
+        var cell = document.createElement("td");
+        var cellText = document.createTextNode("cell in row "+i+", column "+j);
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+      }
+      tblBody.appendChild(row);
+    }
+    tbl.appendChild(tblBody);
+    body.appendChild(tbl);
+    tbl.setAttribute("border", "2");
+  }
 
 
 // Exercises  34) Write a function to change the heading of the page
+
 const changeHeadingPage = function(){
     let pageHeading = document.getElementById("page-heading")
     pageHeading.innerHTML = "I am new header here"
@@ -35,7 +67,12 @@ const changeHeadingPage = function(){
 // console.log(output34)
 
 
+
+
 // Exercises   35) Write a function to add an extra row to the table
+
+
+
 const addNewRowToTable = function(){
     let getTableId = document.getElementById("add-new-row")
     let newTableRow = document.createElement("TH")
@@ -47,6 +84,10 @@ const addNewRowToTable = function(){
 
 
 // Exercises  36) Write a function to add a class of "test" to each row in the table
+
+
+
+
 const changeStyleEachRow = function(){
     let rowId = document.getElementById("add-new-row")
     rowId.classList.add("test")
@@ -55,7 +96,14 @@ const changeStyleEachRow = function(){
 // console.log(output36)
 
 
+
+
+
+
 // Exercises 37) Write a function to add a red background to every link in the page
+
+
+
 const addBackgroundToLinks = function(){
     let getLinkId = document.querySelectorAll("a")
     getLinkId[1].style.backgroundColor = "red"
@@ -63,12 +111,16 @@ const addBackgroundToLinks = function(){
     getLinkId[5].style.backgroundColor = "red"
     getLinkId[7].style.backgroundColor = "red"
 }
- let output37 = addBackgroundToLinks()
- console.log(output37)
+// let output37 = addBackgroundToLinks()
+// console.log(output37)
+
+
+
 
 
 
 // Exercises 38) Console log "Page loaded" when the page is correctly loaded
+
 window.onload = function(){
     console.log("Page Loaded")
 }
@@ -90,6 +142,10 @@ const addNewItemToUL = function(){
 }
 // let output39 = addNewItemToUL()
 // console.log(output39)
+
+
+
+
 
 
 // Exercises 40) Write a function to empty a list

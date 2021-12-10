@@ -36,3 +36,7 @@ console.log(myDetails);
 //         23) Delete the email property from the previously created object //////////
 let deleteEmail = delete myDetails.email
 console.log(myDetails);
+
+
+//         24) Create an array with 10 strings in it   //////////
+let arr = ["Macbook", "Ipad","Iphone", "Iwatch", "Airpods","six","seven","eight","nine","ten"]

@@ -10,6 +10,18 @@
         19) Add a green border to each <td>
         20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property) */
 
+/* ---------task starts here -------   */
+/* 
+       11) Give a maximum width to the body and center it into the page */
+body {
+  min-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  border: 1px solid #00db71;
+  border-radius: 20px;
+}
+
 h1 {
   text-align: center;
   font-size: 30px;

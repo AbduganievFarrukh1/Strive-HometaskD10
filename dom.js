@@ -33,28 +33,28 @@ const GetEveryTDElementFromPage = document.querySelectorAll("td")
 
 ////        33) Use a loop for printing the text inside of every <td> element in the page
 
-function generate_table() {
-    var body = document.getElementsByTagName("body")[0]; 
-    var tbl = document.createElement("table");
-    var tblBody = document.createElement("tbody");
+// function generate_table() {
+//     var body = document.getElementsByTagName("body")[0]; 
+//     var tbl = document.createElement("table");
+//     var tblBody = document.createElement("tbody");
   
-    // creating all cells
-    for (var i = 0; i < 2; i++) {
-      // creates a table row
-      var row = document.createElement("tr");
+//     // creating all cells
+//     for (var i = 0; i < 2; i++) {
+//       // creates a table row
+//       var row = document.createElement("tr");
   
-      for (var j = 0; j < 2; j++) {
-        var cell = document.createElement("td");
-        var cellText = document.createTextNode("cell in row "+i+", column "+j);
-        cell.appendChild(cellText);
-        row.appendChild(cell);
-      }
-      tblBody.appendChild(row);
-    }
-    tbl.appendChild(tblBody);
-    body.appendChild(tbl);
-    tbl.setAttribute("border", "2");
-  }
+//       for (var j = 0; j < 2; j++) {
+//         var cell = document.createElement("td");
+//         var cellText = document.createTextNode(" td "+i+", td "+j);
+//         cell.appendChild(cellText);
+//         row.appendChild(cell);
+//       }
+//       tblBody.appendChild(row);
+//     }
+//     tbl.appendChild(tblBody);
+//     body.appendChild(tbl);
+//     tbl.setAttribute("border", "2");
+//   }
 
 
 // Exercises  34) Write a function to change the heading of the page

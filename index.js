@@ -58,3 +58,15 @@ function randomArray(length, max) {
 }
 let output6 = randomArray(100,150)
 console.log(output6)
+
+
+//         27) Write a function to get the maximum and minimum values from the previously created array///
+console.log("\nTask27\n");
+const getMinAndMaxValues = function(){
+    let maxValue = Math.max.apply(null, output6)
+    let minValue = Math.min.apply(null, output6)
+    console.log("Max value: " + maxValue)
+    console.log("Min value: " + minValue)
+}
+let output7 = getMinAndMaxValues()
+console.log(output7)

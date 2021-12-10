@@ -13,7 +13,7 @@
 /* ---------task starts here -------   */
 /* 
        11) Give a maximum width to the body and center it into the page 
-        14) Create a class with a border assigned to it     */
+        14) Create a class with a border assigned to it    
 body {
   min-width: 90%;
   margin-left: 5%;
@@ -22,6 +22,7 @@ body {
   border: 1px solid #0b492b;
   border-radius: 20px;
 }
+ */
 
 /*   12) Set every h1 to be centered */
 
@@ -33,9 +34,14 @@ h1 {
 }
 
 /*13) Change the color of each link in the page*/
-a {
+/*
+ a {
   color: #0f38ec;
-}
+} 
+*/
+
+/* -------16) Add a margin between every paragraph ---*/
+
 p {
   text-align: center;
   margin: 50px 2 15px;

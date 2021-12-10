@@ -10,4 +10,29 @@
 //         29) Create a function that gets 2 arrays as parameters and returns the longest one
 //         30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values
 
+////////////--------------Task started -----------------///////////////
 
+
+
+
+
+
+//         21) Given variables x = "John" and y = "Doe", write on the console "John <> Doe"
+let x = "John"
+let y = "Doe"
+console.log(x + "<>" + y);
+
+
+///////////------22) Create an object with properties such name, surname, email---------- ////////////
+let myDetails = {
+    name: "Farrukh",
+    surname: "Abduganiev",
+    email: "farruxbe19@gmail.com"
+}
+console.log(myDetails);
+
+
+
+//         23) Delete the email property from the previously created object //////////
+let deleteEmail = delete myDetails.email
+console.log(myDetails);

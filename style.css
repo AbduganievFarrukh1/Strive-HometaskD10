@@ -48,9 +48,19 @@ p {
   font-size: 2.1rem;
 }
 
+/*18) Create a class to hide a piece of content
+
+.hide-content {
+  visibility: hidden;
+}
+
+*/
+
+/* 19) Add a green border to each <td> */
+
 td,
 th {
-  border: 1px solid rgb(190, 190, 190);
+  border: 1px solid green;
   padding: 10px;
 }
 
@@ -72,6 +82,16 @@ th[scope="col"] {
 th[scope="row"] {
   background-color: #77b415;
 }
+/*17) Create a class which changes font size and text weight when applied*/
+/* 
+
+.change-font-size-and-weight {
+  color: #00db71;
+  text-align: center;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-weight: bold;
+}
+ */
 
 caption {
   padding: 10px;

@@ -68,6 +68,15 @@ td {
   text-align: center;
   /*background-color: #d8af29;*/
 }
+/*20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
+
+tr {
+  border-collapse: collapse;
+  border-style: dotted;
+  border-color: red;
+  border-radius: 5px;
+}
+*/
 
 tr:nth-child(even) {
   background-color: #eee;
